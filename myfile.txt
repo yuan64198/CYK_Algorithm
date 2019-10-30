@@ -1,0 +1,24 @@
+PROCESSINGS SENTENCE fish people fish tanks
+SPAN:  fish
+P(VP) = 0.1
+P(NP) = 0.2
+P(N) = 0.2
+P(V) = 0.6
+
+SPAN:  people
+P(NP) = 0.3
+P(N) = 0.5
+P(V) = 0.1
+
+SPAN:  tanks
+P(NP) = 0.1
+P(N) = 0.2
+P(V) = 0.3
+
+SPAN:  rods
+P(NP) = 0.1
+P(N) = 0.1
+
+SPAN:  with
+P(P) = 1.0
+
