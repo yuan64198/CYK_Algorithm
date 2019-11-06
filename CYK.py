@@ -42,7 +42,7 @@ class CKYParser:
                 ret_g = {}
                 log_g = {}
                 for k in range(i):
-                    ret_g, log_g = this.cal_grammars(ret[k][j][1], ret[i-k-1][j+1+k][1], ret_g, log_g, j)
+                    ret_g, log_g = this.cal_grammars(ret[k][j][1], ret[i-k-1][j+1+k][1], ret_g, log_g, j+k)
                 str1 = ' '.join(str(e) for e in words[j:j+i+1])
                 
                 
