@@ -127,9 +127,9 @@ def read_file(file_name):
 
 
 def main():
-    if(len(sys.argv) != 3):
+    if(len(sys.argv) != 4):
         print(len(sys.argv))
-        print("PLEASE ENTER INPUT FILES: GRAMMAR_RULES, SENTENCES")
+        print("PLEASE ENTER INPUT FILES: GRAMMAR_RULES, SENTENCES, OUTPUT_FILE")
     else:
         rules = read_file(sys.argv[1])
         sents = read_file(sys.argv[2])
@@ -138,7 +138,7 @@ def main():
 
         for s in sents_list:
             parser.parse_sentence(s)
-        parser.write_log_to_file("output.txt")
+        parser.write_log_to_file(sys.argv[3])
         #logging.info("=====Done Parsing Sentences using CYK Algorithm=====")
     return
 
